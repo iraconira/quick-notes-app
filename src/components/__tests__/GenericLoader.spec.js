@@ -7,7 +7,7 @@ describe('GenericLoader', () => {
     it('renders properly', () => {
         const wrapper = mount(GenericLoader)
 
-        expect(wrapper.find('.loader')).toBeDefined
-        expect(wrapper.find('.loader__dual-ring')).toBeDefined
+        expect(wrapper.find('.loader').exists()).toBe(true)
+        expect(wrapper.find('.loader__dual-ring').exists()).toBe(true)
     })
 })
