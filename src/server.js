@@ -25,6 +25,7 @@ export function makeServer({ environment = 'development' } = {}) {
 
         routes() {
             this.namespace = 'api'
+            this.timing = 1500
 
             this.get('/notes', (schema) => {
                 return schema.notes.all()
