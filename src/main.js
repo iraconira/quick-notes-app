@@ -1,8 +1,7 @@
 import { createApp } from 'vue'
 import App from '@/App.vue'
 import { makeServer } from '@/server'
-
-import './assets/main.css'
+import './assets/base.scss'
 
 // mock fake server
 if (import.meta.env.MODE === 'development') {
